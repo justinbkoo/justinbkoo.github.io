@@ -1,0 +1,169 @@
+/*Entire page*/
+body {
+	margin: 0px!important;
+	padding: 0px!important;
+}
+
+/*Entire navigation bar*/
+#menu {
+	padding-left: 16px;
+	padding-right: 16px;
+	position:fixed;
+	width:100%;
+	z-index:1;
+	background-color: rgba(0,0,0,0);
+	transition: .5s;
+}
+
+/*title*/
+.navbar-brand {
+	color: white;
+}
+
+#logo {
+	width: 40px;
+	height: 40px;
+}
+
+/*Links*/
+.nav-link {
+  color: white;
+}
+
+/*toggler*/
+.navbar-toggler {
+	display: flex;
+	flex-flow: column nowrap;
+	border-color: rgba(0,0,0,0);
+	align-self: center;
+}
+
+.navbar-toggler-icon {
+	height: 25px;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,2255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*Entire content*/
+#content {
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: rgba(20,20,20,1);
+}
+
+#home {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+	justify-content: center;
+	text-align: center;
+}
+
+#portrait {
+	width: 250px;
+	height: auto;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#name {
+	margin-top: 25px;
+	color: white;
+	font-size: 50px;
+}
+
+#descriptors {
+	color: white;
+}
+
+#icons {
+	flex-flow: row nowrap;
+	align-self: center;
+	height: 30px;
+}
+
+.fa {
+	margin: 10px;
+	color: white;
+	transition: .2s;
+}
+
+.fa:hover {
+	text-decoration: none;
+	color: grey;
+}
+
+#about {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#aboutTitle {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.aboutBox {
+	margin: 30px;
+	min-width: 100px;
+	max-width: 300px;
+	color: white;
+	flex-flow: column nowrap;
+	flex-grow: 1;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+#contact {
+	text-align: center;
+	color: white;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	min-height: 100vh;
+	
+}
+
+.contactBox {
+	margin: 10px;
+	padding: 10px;
+	min-width: 100px;
+	color: white;
+	
+}
+
+@media screen and (max-width: 770px) {
+	.aboutBox {
+		padding: 0px;
+	}
+	.contactBox {
+		padding: 0px;
+	}
+	#email {
+		font-size: 20px;
+	}
+	#email2 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 270px) {
+	#email {
+		font-size: 10px;
+	}
+	#email2 {
+		font-size: 10px;
+	}
+}
