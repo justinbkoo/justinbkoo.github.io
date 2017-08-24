@@ -223,23 +223,9 @@ body {
 	opacity: 1;
 }
 
-a {
-	color: white;
-	text-decoration: none;
-}
-
-a:hover {
-	color: white;
-	text-decoration: none;
-}
-
-a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-a:active {
-	text-decoration: none;
+a a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
 #contact {
