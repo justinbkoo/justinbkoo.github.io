@@ -284,6 +284,9 @@ a:active {
 	.contactBox > h2 {
 	font-size: 4.5vw;
 	}
+	.overlay {
+		opacity: 1;
+	}
 }
 
 @media screen and (max-width: 270px) {
