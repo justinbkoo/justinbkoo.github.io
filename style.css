@@ -2,6 +2,7 @@
 body {
 	margin: 0px!important;
 	padding: 0px!important;
+	overflow-x:hidden;
 }
 
 /*Entire navigation bar*/
@@ -10,7 +11,7 @@ body {
 	padding-right: 16px;
 	position:fixed;
 	width:100%;
-	z-index:1;
+	z-index:5;
 	background-color: rgba(0,0,0,0);
 	transition: .5s;
 }
@@ -105,6 +106,7 @@ body {
 
 #aboutTitle {
 	display: flex;
+	flex-flow: column;
 	width: 100%;
 	justify-content: center;
 	color: white;
@@ -124,6 +126,122 @@ body {
 	font-size: 20px;
 }
 
+#projects {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#projectsTitle {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.projectsBox {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin: 30px;
+	width: 400px;
+	max-width: 80vw;
+	height: 300px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	opacity: 1;
+}
+
+#fetchmeaquote {
+	background: url("images/fetchmeaquotethumb.png");
+	background-position: center;
+}
+
+#quickweather {
+	background: url("images/quickweatherthumb2.png");
+	background-position: center;
+}
+
+#webpage {
+	background: url("images/urlthumb.jpg");
+	background-position: center;
+}
+
+#unknown {
+	background: url("images/unknownthumb.jpg");
+	background-position: center;
+}
+
+.overlay2 {
+	
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	position: fiex;
+	overflow: auto;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(75,75,75,.5);
+}
+
+.overlay {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	position: fiex;
+	overflow: auto;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	padding: 10px;
+	transition: opacity .3s;
+	background: -moz-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.5)), color-stop(100%, rgba(0,0,255,0.5))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* ie10+ */
+	background: linear-gradient(180deg, rgba(255,255,255,0.65) 0%, rgba(0,0,0,0.65) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0000ff',GradientType=0 ); /* ie6-9 */
+}
+.overlay:hover {
+	opacity: 1;
+}
+
+.overlay2:hover {
+	opacity: 1;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
 #contact {
 	text-align: center;
 	color: white;
@@ -134,6 +252,18 @@ body {
 	justify-content: space-evenly;
 	min-height: 100vh;
 	
+}
+
+#contactTitle {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 10px;
 }
 
 .contactBox {
@@ -151,19 +281,10 @@ body {
 	.contactBox {
 		padding: 0px;
 	}
-	#email {
-		font-size: 20px;
-	}
-	#email2 {
-		font-size: 20px;
+	.contactBox > h2 {
+	font-size: 4.5vw;
 	}
 }
 
 @media screen and (max-width: 270px) {
-	#email {
-		font-size: 10px;
-	}
-	#email2 {
-		font-size: 10px;
-	}
 }
