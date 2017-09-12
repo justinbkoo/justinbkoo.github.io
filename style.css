@@ -75,6 +75,7 @@ body {
 
 #descriptors {
 	color: white;
+	margin
 }
 
 #icons {
@@ -176,8 +177,8 @@ body {
 	background-position: center;
 }
 
-#unknown {
-	background: url("images/unknownthumb.jpg");
+#limlike {
+	background: url("images/limlike.png");
 	background-position: center;
 }
 
