@@ -1,0 +1,346 @@
+/*Entire page*/
+body {
+	margin: 0px!important;
+	padding: 0px!important;
+	overflow-x:hidden;
+}
+
+/*Entire navigation bar*/
+#menu {
+	padding-left: 16px;
+	padding-right: 16px;
+	position:fixed;
+	width:100%;
+	z-index:5;
+	background-color: rgba(0,0,0,0);
+	transition: .5s;
+}
+
+/*title*/
+.navbar-brand {
+	color: white;
+}
+
+#logo {
+	width: 40px;
+	height: 40px;
+}
+
+/*Links*/
+.nav-link {
+  color: white;
+}
+
+/*toggler*/
+.navbar-toggler {
+	display: flex;
+	flex-flow: column nowrap;
+	border-color: rgba(0,0,0,0);
+	align-self: center;
+}
+
+.navbar-toggler-icon {
+	height: 25px;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,2255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*Entire content*/
+#content {
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: rgba(20,20,20,1);
+}
+
+#home {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+	justify-content: center;
+	text-align: center;
+}
+
+#portrait {
+	width: 250px;
+	height: auto;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#name {
+	margin-top: 25px;
+	color: white;
+	font-size: 50px;
+}
+
+#descriptors {
+	color: white;
+	margin
+}
+
+#icons {
+	flex-flow: row nowrap;
+	align-self: center;
+	height: 30px;
+}
+
+.fa {
+	margin: 10px;
+	color: white;
+	transition: .2s;
+}
+
+.fa:hover {
+	text-decoration: none;
+	color: grey;
+}
+
+#about {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#aboutTitle {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.aboutBox {
+	margin: 30px;
+	min-width: 100px;
+	max-width: 300px;
+	color: white;
+	flex-flow: column nowrap;
+	flex-grow: 1;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+#projects {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#projectsTitle {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.projectsBox {
+	overflow: hidden;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin: 10px;
+	width: 400px;
+	max-width: 80vw;
+	height: 300px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	opacity: 1;
+}
+
+#fetchmeaquote {
+	background: url("images/fetchmeaquotethumb.png");
+	background-position: center;
+}
+
+#quickweather {
+	background: url("images/quickweatherthumb2.png");
+	background-position: center;
+}
+
+#webpage {
+	background: url("images/urlthumb.jpg");
+	background-position: center;
+}
+
+#limlike {
+	background: url("images/limlike.png");
+	background-position: center;
+}
+
+.overlay2 {
+	
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	position: fiex;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(75,75,75,.5);
+}
+
+.overlay {
+	overflow: hidden;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	position: fiex;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	padding: 10px;
+	transition: opacity .3s;
+	background: -moz-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.5)), color-stop(100%, rgba(0,0,255,0.5))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* ie10+ */
+	background: linear-gradient(180deg, rgba(255,255,255,0.65) 0%, rgba(0,0,0,0.65) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0000ff',GradientType=0 ); /* ie6-9 */
+}
+.overlay:hover {
+	overflow: hidden;
+	opacity: 1;
+}
+
+.overlay2:hover {
+	overflow: hidden;
+	opacity: 1;
+}
+
+a a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+#contact {
+	text-align: center;
+	color: white;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	min-height: 100vh;
+	
+}
+
+#contactTitle {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	/*margin-bottom: 50px;*/
+	padding: 10px;
+}
+
+.contactBox {
+	display: flex;
+	flex-flow: column;
+	width: 770px;
+	justify-content: center;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	line-height: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.customInput {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	background-color: rgba(40,40,40,1);
+	color: white;
+	border: 0px;
+	text-decoration: none;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.customInput:focus {
+	outline: none;
+}
+
+.messageInput {
+	min-height: 250px;
+	line-height: 30px;
+}
+
+.sendButton {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	height: 50px;
+	color: white;
+}
+
+#buttonAndErrors {
+	display: flex;
+	flex-flow: row;
+}
+
+#errors {
+	margin: auto;
+}
+
+.errorMessage {
+	display: block;
+	float: left;
+	margin: auto;
+	color: red;
+	padding: 10px;
+}
+
+.successMessage {
+	display: block;
+	float: left;
+	color: green;
+}
+
+
+@media screen and (max-width: 770px) {
+	.aboutBox {
+		padding: 0px;
+	}
+	.contactBox {
+		padding: 0px;
+	}
+	.contactBox > h2 {
+	font-size: 4.5vw;
+	}
+	.overlay {
+		opacity: 1;
+	}
+	.contactBox {
+		width: auto;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 270px) {
+}
