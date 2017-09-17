@@ -101,6 +101,7 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	justify-content: space-around;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -133,6 +134,7 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	justify-content: space-around;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
