@@ -14,6 +14,8 @@ body {
 	z-index:5;
 	background-color: rgba(0,0,0,0);
 	transition: .5s;
+	transition-property: all;
+	transition-duration: .5s;
 }
 
 /*title*/
@@ -88,6 +90,8 @@ body {
 	margin: 10px;
 	color: white;
 	transition: .2s;
+	transition-property: all;
+	transition-duration: .2s;
 }
 
 .fa:hover {
@@ -212,6 +216,8 @@ body {
 	opacity: 0;
 	padding: 10px;
 	transition: opacity .3s;
+	transition-property: all;
+	transition-duration: .3s;
 	background: -moz-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.5)), color-stop(100%, rgba(0,0,255,0.5))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* safari5.1+,chrome10+ */
