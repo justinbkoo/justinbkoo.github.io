@@ -129,7 +129,7 @@ function submitError(name, email, message) {
         return false;
     }
     var errorHtml = '';
-    errors.forEach((error) => {
+    errors.forEach(function(error) {
         errorHtml += '<li class="errorMessage">' + error + '</li>';
     });
     $("#errors").html(errorHtml)
