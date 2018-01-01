@@ -77,10 +77,10 @@ body {
 
 #descriptors {
 	color: white;
-	margin
 }
 
 #icons {
+	margin-top: 70px;
 	flex-flow: row nowrap;
 	align-self: center;
 	height: 30px;
@@ -132,13 +132,16 @@ body {
 	font-size: 20px;
 }
 
+.aboutBox > p {
+	font-size: 18px;
+}
+
 #projects {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
-	justify-content: space-around;
+	justify-content: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -151,7 +154,6 @@ body {
 	color: white;
 	font-size: 30px;
 	text-align: center;
-	margin-bottom: 50px;
 }
 
 .projectsBox {
@@ -162,7 +164,7 @@ body {
 	margin: 10px;
 	width: 400px;
 	max-width: 80vw;
-	height: 300px;
+	height: 250px;
 	color: white;
 	font-size: 20px;
 	text-align: center;
@@ -176,6 +178,11 @@ body {
 
 #quickweather {
 	background: url("images/quickweatherthumb2.png");
+	background-position: center;
+}
+
+#wikipediaviewer {
+	background: url("images/wikipediaviewer.png");
 	background-position: center;
 }
 
