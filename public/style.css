@@ -3,6 +3,7 @@ body {
 	margin: 0px!important;
 	padding: 0px!important;
 	overflow-x:hidden;
+	font-family: 'Lato', sans-serif;
 }
 
 /*Entire navigation bar*/
@@ -12,10 +13,10 @@ body {
 	position:fixed;
 	width:100%;
 	z-index:5;
-	background-color: rgba(0,0,0,0);
+	background-color: #6b78af;
 	transition: .5s;
 	transition-property: all;
-	transition-duration: .5s;
+	transition-duration: .3s;
 }
 
 /*title*/
@@ -43,14 +44,14 @@ body {
 
 .navbar-toggler-icon {
 	height: 25px;
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,2255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /*Entire content*/
 #content {
 	display: flex;
 	flex-flow: column nowrap;
-	background-color: rgba(20,20,20,1);
+	background-color: #6b78af;
 }
 
 #home {
@@ -73,17 +74,17 @@ body {
 	margin-top: 25px;
 	color: white;
 	font-size: 50px;
+	text-shadow: 1px 1px #30415d;
 }
 
 #descriptors {
 	color: white;
+	font-size: 15px;
 }
 
 #icons {
-	margin-top: 70px;
 	flex-flow: row nowrap;
 	align-self: center;
-	height: 30px;
 }
 
 .fa {
@@ -96,7 +97,7 @@ body {
 
 .fa:hover {
 	text-decoration: none;
-	color: grey;
+	color: #30415d;
 }
 
 #about {
@@ -104,10 +105,11 @@ body {
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
-	justify-content: space-around;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	justify-content: center;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	background-color: #f5f5f5;
+
 }
 
 #aboutTitle {
@@ -115,7 +117,7 @@ body {
 	flex-flow: column;
 	width: 100%;
 	justify-content: center;
-	color: white;
+	color: black;
 	font-size: 30px;
 	text-align: center;
 	margin-bottom: 50px;
@@ -124,16 +126,16 @@ body {
 .aboutBox {
 	margin: 30px;
 	min-width: 100px;
-	max-width: 300px;
-	color: white;
+	max-width: 400px;
+	color: black;
 	flex-flow: column nowrap;
 	flex-grow: 1;
 	border-radius: 10px;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .aboutBox > p {
-	font-size: 18px;
+	font-size: 15px;
 }
 
 #projects {
@@ -142,8 +144,9 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	background-color: #6b78af;
 }
 
 #projectsTitle {
@@ -154,6 +157,7 @@ body {
 	color: white;
 	font-size: 30px;
 	text-align: center;
+	text-shadow: 1px 1px #015249;
 }
 
 .projectsBox {
@@ -169,6 +173,7 @@ body {
 	font-size: 20px;
 	text-align: center;
 	opacity: 1;
+	border-radius: 5px;
 }
 
 #fetchmeaquote {
@@ -205,7 +210,7 @@ body {
 	overflow: hidden;
 	top: 0px;
 	left: 0px;
-	background-color: rgba(75,75,75,.5);
+	background-color: rgba(1,82,73,.5);
 }
 
 .overlay {
@@ -230,7 +235,7 @@ body {
 	background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* safari5.1+,chrome10+ */
 	background: -o-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(0,0,255,0.5) 100%); /* ie10+ */
-	background: linear-gradient(180deg, rgba(255,255,255,0.65) 0%, rgba(0,0,0,0.65) 100%); /* w3c */
+	background: linear-gradient(180deg, rgba(107,120,175,.5) 0%, rgba(48,65,93,1) 100%); /* w3c */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0000ff',GradientType=0 ); /* ie6-9 */
 }
 .overlay:hover {
@@ -243,20 +248,21 @@ body {
 	opacity: 1;
 }
 
-a a:hover, a:visited, a:link, a:active
+a a:hover, a:visited, a:link, a:active, .nav-link, .nav-item
 {
     text-decoration: none;
 }
 
 #contact {
 	text-align: center;
-	color: white;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	color: black;
+	padding-top: 125px;
+	padding-bottom: 125px;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-evenly;
 	min-height: 100vh;
+	background-color: #f5f5f5;
 	
 }
 
@@ -265,7 +271,7 @@ a a:hover, a:visited, a:link, a:active
 	flex-flow: column;
 	width: 100%;
 	justify-content: center;
-	color: white;
+	color: black;
 	font-size: 30px;
 	text-align: center;
 	/*margin-bottom: 50px;*/
@@ -287,9 +293,9 @@ a a:hover, a:visited, a:link, a:active
 }
 
 .customInput {
-	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-	background-color: rgba(40,40,40,1);
-	color: white;
+	font-family: 'Lato', sans-serif;
+	background-color: #e5e5e5;
+	color: black;
 	border: 0px;
 	text-decoration: none;
 	width: 100%;
@@ -308,9 +314,15 @@ a a:hover, a:visited, a:link, a:active
 }
 
 .sendButton {
-	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-family: 'Lato', sans-serif;
 	height: 50px;
 	color: white;
+	background-color:#6b78af;
+	transition-duration: 0s;
+}
+
+.sendButton:hover {
+	background-color: #30415d;
 }
 
 #buttonAndErrors {
@@ -333,7 +345,7 @@ a a:hover, a:visited, a:link, a:active
 .successMessage {
 	display: block;
 	float: left;
-	color: green;
+	color: black;
 }
 
 

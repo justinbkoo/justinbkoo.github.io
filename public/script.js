@@ -15,7 +15,7 @@ $(document).ready(function () {
     messagesRef = firebase.database().ref('messages');
 
     if ($(window).scrollTop() == 0) {
-        $("#menu").css("background-color", "rgba(0,0,0,0");
+        $("#menu").css("background-color", "#6b78af");
     }
 
     $(window).scroll(function () {
@@ -31,7 +31,7 @@ $(document).ready(function () {
         scrollPercent = scrollPercent.toFixed(1);
 
         if (scrollPercent <= targetPercentage) {
-            $(targetID).css("background-color", "rgba(0,0,0,0)");
+            $(targetID).css("background-color", "#6b78af");
             $(targetID).css("padding-top", "16px");
             $(targetID).css("padding-botom", "16px");
             $(".navbar-brand").css("color", "white");
@@ -41,7 +41,9 @@ $(document).ready(function () {
         if (scrollPercent > targetPercentage) {
             $(targetID).css("padding-top", "0px");
             $(targetID).css("padding-bottom", "0px");
-            $(targetID).css("background-color", "black");
+            $(targetID).css("background-color", "#30415d");
+            $(".navbar-brand").css("color", "white");
+            $(".nav-link").css("color", "white");
         }
     }).trigger('scroll');
 
