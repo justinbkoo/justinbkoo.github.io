@@ -201,6 +201,11 @@ body {
 	background-position: center;
 }
 
+#codes {
+	background: url("images/codes.png");
+	background-position: center;
+}
+
 .overlay2 {
 	
 	z-index: 1;
