@@ -259,7 +259,7 @@ a a:hover, a:visited, a:link, a:active, .nav-link, .nav-item
 	color: white;
 }
 
-#umn, #lmk{
+#cse, #umn, #lmk{
 	color: maroon;
 	text-decoration: underline;
 }
@@ -270,14 +270,15 @@ a a:hover, a:visited, a:link, a:active, .nav-link, .nav-item
 
 #contact {
 	text-align: center;
-	color: black;
+	color: white;
 	padding-top: 125px;
 	padding-bottom: 125px;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-evenly;
 	min-height: 100vh;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
+	/* background-color: #6b78af; */
 	
 }
 
@@ -286,7 +287,7 @@ a a:hover, a:visited, a:link, a:active, .nav-link, .nav-item
 	flex-flow: column;
 	width: 100%;
 	justify-content: center;
-	color: black;
+	color: white;
 	font-size: 30px;
 	text-align: center;
 	/*margin-bottom: 50px;*/
@@ -332,8 +333,8 @@ a a:hover, a:visited, a:link, a:active, .nav-link, .nav-item
 .sendButton {
 	font-family: 'Lato', sans-serif;
 	height: 50px;
-	color: white;
-	background-color:#6b78af;
+	color: black;
+	background-color: white;
 	transition-duration: 0s;
 }
 
